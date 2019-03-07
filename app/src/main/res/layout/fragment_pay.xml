@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/shape_ufo_pay"
+    android:orientation="horizontal"
+    >
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/common_icon_alllist_n_xxhdpi"
+            android:text="全部订单"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#666666"
+           />
+
+
+        <RadioButton
+            android:id="@+id/rd2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/common_icon_pay_n_xxhdpi"
+            android:text="代付款"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/rd3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/common_icon_receive_n_xxhdpi"
+            android:text="待收货"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            />
+
+        <RadioButton
+            android:id="@+id/rd4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/commom_icon_comment_n_xxhdpi"
+            android:text="待评价"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            />
+
+        <RadioButton
+            android:id="@+id/rd5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/common_icon_finish_n_xxhdpi"
+            android:text="已完成"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            />
+    </RadioGroup>
+
+</LinearLayout>
+
+    <!--viewpager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"/>
+
+
+
+
+
+
+
+</LinearLayout>

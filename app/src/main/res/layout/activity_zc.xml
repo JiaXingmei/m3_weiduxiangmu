@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/dl"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:drawableLeft="@mipmap/phone1"
+        android:id="@+id/zc_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="手机号"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="180dp"
+        android:textColorHint="#ffffff"
+        />
+    <EditText
+        android:drawableLeft="@mipmap/code"
+        android:id="@+id/zc_yz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="验证码"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#ffffff"
+        />
+    <EditText
+        android:drawableLeft="@mipmap/lock"
+        android:id="@+id/zc_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="登录密码"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#ffffff"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/login_zc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="已有账户?立即登录"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:layout_marginRight="36dp"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/zc"
+        android:background="@drawable/shape_ufo_dl"
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:textColor="#ff5f71"
+        android:layout_height="50dp"
+        android:text="注册"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

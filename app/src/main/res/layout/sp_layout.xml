@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/sp_check"
+        android:layout_width="44dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_shouye">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/shop_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/shop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/shop_img"
+            android:layout_toRightOf="@id/shop_img"
+            android:text="car_name"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/shop_img"
+            android:layout_toRightOf="@id/shop_img"
+            android:text="car_price"
+            android:textColor="#f00" />
+        <com.example.dell.m3_weiduxiangmu.AddBar
+           android:id="@+id/add_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignBottom="@id/shop_img"
+           android:layout_toRightOf="@id/shop_price"
+            android:layout_marginLeft="40dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
